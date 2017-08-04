@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3B18AA11F33304800C0E3BC /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B18A9C1F33302300C0E3BC /* ProtocolBuffers.framework */; };
+		A3B18AA41F33374200C0E3BC /* IMMessage.proto in Resources */ = {isa = PBXBuildFile; fileRef = A3B18AA21F33374200C0E3BC /* IMMessage.proto */; };
+		A3B18AA51F33374200C0E3BC /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B18AA31F33374200C0E3BC /* Immessage.proto.swift */; };
 		A3D7F0061F319EB6005B0FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0051F319EB6005B0FC2 /* AppDelegate.swift */; };
 		A3D7F0081F319EB6005B0FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0071F319EB6005B0FC2 /* ViewController.swift */; };
 		A3D7F00A1F319EB6005B0FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D7F0091F319EB6005B0FC2 /* Assets.xcassets */; };
 		A3D7F00D1F319EB6005B0FC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D7F00B1F319EB6005B0FC2 /* Main.storyboard */; };
 		A3D7F0181F319EB6005B0FC2 /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0171F319EB6005B0FC2 /* ServerTests.swift */; };
 		A3D7F0231F319EB6005B0FC2 /* ServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0221F319EB6005B0FC2 /* ServerUITests.swift */; };
+		A3D7F0381F31A191005B0FC2 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0331F31A191005B0FC2 /* ysocket.swift */; };
+		A3D7F0391F31A191005B0FC2 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0341F31A191005B0FC2 /* ytcpsocket.c */; };
+		A3D7F03A1F31A191005B0FC2 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0351F31A191005B0FC2 /* ytcpsocket.swift */; };
+		A3D7F03B1F31A191005B0FC2 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0361F31A191005B0FC2 /* yudpsocket.c */; };
+		A3D7F03C1F31A191005B0FC2 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F0371F31A191005B0FC2 /* yudpsocket.swift */; };
+		A3D7F03E1F31A221005B0FC2 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F03D1F31A221005B0FC2 /* ServerManager.swift */; };
+		A3D7F1031F31AEB4005B0FC2 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D7F1021F31AEB4005B0FC2 /* ClientManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A3B18A971F33302300C0E3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F85569919C71BCF003802F2;
+			remoteInfo = ProtocolBuffers;
+		};
+		A3B18A991F33302300C0E3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F8556A419C71BCF003802F2;
+			remoteInfo = UnitTesting;
+		};
+		A3B18A9B1F33302300C0E3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F41061C1A1A667700742090;
+			remoteInfo = "ProtocolBuffers(OSX)";
+		};
+		A3B18A9D1F33302300C0E3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F4106261A1A667800742090;
+			remoteInfo = "UnitTesting(OSX)";
+		};
+		A3B18A9F1F33302300C0E3BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F31A1A91BA199C000F477C1;
+			remoteInfo = "ProtocolBuffers(watchOS)";
+		};
 		A3D7F0141F319EB6005B0FC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3D7EFFA1F319EB6005B0FC2 /* Project object */;
@@ -33,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuffers.xcodeproj; path = "../../../../Mrhuang/Desktop/protobuf-swift-master/plugin/ProtocolBuffers/ProtocolBuffers.xcodeproj"; sourceTree = "<group>"; };
+		A3B18AA21F33374200C0E3BC /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IMMessage.proto; path = ../../../../Mrhuang/Desktop/Server/Server/IMMessage.proto; sourceTree = "<group>"; };
+		A3B18AA31F33374200C0E3BC /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Immessage.proto.swift; path = ../../../../Mrhuang/Desktop/Server/Server/Immessage.proto.swift; sourceTree = "<group>"; };
 		A3D7F0021F319EB6005B0FC2 /* Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Server.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D7F0051F319EB6005B0FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D7F0071F319EB6005B0FC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +93,13 @@
 		A3D7F01E1F319EB6005B0FC2 /* ServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D7F0221F319EB6005B0FC2 /* ServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerUITests.swift; sourceTree = "<group>"; };
 		A3D7F0241F319EB6005B0FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D7F0331F31A191005B0FC2 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		A3D7F0341F31A191005B0FC2 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		A3D7F0351F31A191005B0FC2 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		A3D7F0361F31A191005B0FC2 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		A3D7F0371F31A191005B0FC2 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		A3D7F03D1F31A221005B0FC2 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		A3D7F1021F31AEB4005B0FC2 /* ClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B18AA11F33304800C0E3BC /* ProtocolBuffers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +128,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3B18A901F33302300C0E3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B18A981F33302300C0E3BC /* ProtocolBuffers.framework */,
+				A3B18A9A1F33302300C0E3BC /* ProtocolBuffersTests.xctest */,
+				A3B18A9C1F33302300C0E3BC /* ProtocolBuffers.framework */,
+				A3B18A9E1F33302300C0E3BC /* UnitTesting(OSX).xctest */,
+				A3B18AA01F33302300C0E3BC /* ProtocolBuffers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A3D7EFF91F319EB6005B0FC2 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +163,12 @@
 		A3D7F0041F319EB6005B0FC2 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				A3D7F0311F31A191005B0FC2 /* server */,
 				A3D7F0051F319EB6005B0FC2 /* AppDelegate.swift */,
 				A3D7F0071F319EB6005B0FC2 /* ViewController.swift */,
+				A3B18AA21F33374200C0E3BC /* IMMessage.proto */,
+				A3B18AA31F33374200C0E3BC /* Immessage.proto.swift */,
+				A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */,
 				A3D7F0091F319EB6005B0FC2 /* Assets.xcassets */,
 				A3D7F00B1F319EB6005B0FC2 /* Main.storyboard */,
 				A3D7F00E1F319EB6005B0FC2 /* Info.plist */,
@@ -120,6 +192,28 @@
 				A3D7F0241F319EB6005B0FC2 /* Info.plist */,
 			);
 			path = ServerUITests;
+			sourceTree = "<group>";
+		};
+		A3D7F0311F31A191005B0FC2 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				A3D7F0321F31A191005B0FC2 /* ysocket */,
+				A3D7F03D1F31A221005B0FC2 /* ServerManager.swift */,
+				A3D7F1021F31AEB4005B0FC2 /* ClientManager.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		A3D7F0321F31A191005B0FC2 /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				A3D7F0331F31A191005B0FC2 /* ysocket.swift */,
+				A3D7F0341F31A191005B0FC2 /* ytcpsocket.c */,
+				A3D7F0351F31A191005B0FC2 /* ytcpsocket.swift */,
+				A3D7F0361F31A191005B0FC2 /* yudpsocket.c */,
+				A3D7F0371F31A191005B0FC2 /* yudpsocket.swift */,
+			);
+			path = ysocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +309,12 @@
 			mainGroup = A3D7EFF91F319EB6005B0FC2;
 			productRefGroup = A3D7F0031F319EB6005B0FC2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A3B18A901F33302300C0E3BC /* Products */;
+					ProjectRef = A3B18A8F1F33302300C0E3BC /* ProtocolBuffers.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A3D7F0011F319EB6005B0FC2 /* Server */,
@@ -224,11 +324,50 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A3B18A981F33302300C0E3BC /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = A3B18A971F33302300C0E3BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3B18A9A1F33302300C0E3BC /* ProtocolBuffersTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProtocolBuffersTests.xctest;
+			remoteRef = A3B18A991F33302300C0E3BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3B18A9C1F33302300C0E3BC /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = A3B18A9B1F33302300C0E3BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3B18A9E1F33302300C0E3BC /* UnitTesting(OSX).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTesting(OSX).xctest";
+			remoteRef = A3B18A9D1F33302300C0E3BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A3B18AA01F33302300C0E3BC /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = A3B18A9F1F33302300C0E3BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A3D7F0001F319EB6005B0FC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B18AA41F33374200C0E3BC /* IMMessage.proto in Resources */,
 				A3D7F00A1F319EB6005B0FC2 /* Assets.xcassets in Resources */,
 				A3D7F00D1F319EB6005B0FC2 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +394,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D7F03E1F31A221005B0FC2 /* ServerManager.swift in Sources */,
+				A3B18AA51F33374200C0E3BC /* Immessage.proto.swift in Sources */,
+				A3D7F0381F31A191005B0FC2 /* ysocket.swift in Sources */,
 				A3D7F0081F319EB6005B0FC2 /* ViewController.swift in Sources */,
+				A3D7F03B1F31A191005B0FC2 /* yudpsocket.c in Sources */,
+				A3D7F0391F31A191005B0FC2 /* ytcpsocket.c in Sources */,
 				A3D7F0061F319EB6005B0FC2 /* AppDelegate.swift in Sources */,
+				A3D7F03A1F31A191005B0FC2 /* ytcpsocket.swift in Sources */,
+				A3D7F03C1F31A191005B0FC2 /* yudpsocket.swift in Sources */,
+				A3D7F1031F31AEB4005B0FC2 /* ClientManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +643,7 @@
 				A3D7F0291F319EB6005B0FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3D7F02A1F319EB6005B0FC2 /* Build configuration list for PBXNativeTarget "ServerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +652,7 @@
 				A3D7F02C1F319EB6005B0FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3D7F02D1F319EB6005B0FC2 /* Build configuration list for PBXNativeTarget "ServerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +661,7 @@
 				A3D7F02F1F319EB6005B0FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
